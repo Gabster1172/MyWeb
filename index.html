@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel's Developer Portfolio showcasing projects and skills">
+    <meta name="author" content="Gabriel">
+    <title>Gabriel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header role="banner">
+        <nav role="navigation">
+            <button class="menu-icon" aria-label="Toggle Menu">&#9776;</button>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am a passionate programmer with expertise in C#, problem-solving, and user-friendly design. 
+        I thrive on structured thinking and enjoy refining code for better functionality and clarity.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filter">
+            <button onclick="filterProjects('web')">Web Development</button>
+            <button onclick="filterProjects('software')">Software Development</button>
+        </div>
+        <article class="project web">
+            <figure>
+                <img src="library-system.png" alt="Library Management System interface" onclick="openLightbox(this)">
+                <figcaption>Library Management System - A dynamic book management platform built with C#.</figcaption>
+            </figure>
+        </article>
+        <article class="project software">
+            <figure>
+                <img src="grade-system.png" alt="Student Grade Management System UI" onclick="openLightbox(this)">
+                <figcaption>Grade Management System - A robust C# tool for handling student grades efficiently.</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C# Programming</li>
+            <li>Object-Oriented Design</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Debugging & Code Refinement</li>
+            <li>User Experience & Interface Design</li>
+        </ul>
+    </section>
